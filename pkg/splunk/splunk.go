@@ -24,7 +24,7 @@ host = {{.HostName}}
 disabled = false
 followTail = 0
 sourcetype = access_combined
-index = {{.SplunkIndex}}
+index = {{.SplunkIndex}}-access
 {{.SplunkBlacklist}}
 _meta = environment::{{.PodNamespace}} application::{{.AppName}} nodetype::openshift
 host = {{.HostName}}
