@@ -1,4 +1,4 @@
-node {
+node('go-1.13') {
     stage  ('Load shared libraries') {
         def version='v5'
         fileLoader.withGit('https://git.aurora.skead.no/scm/ao/aurora-pipeline-scripts.git', version) {
